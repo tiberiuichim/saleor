@@ -102,8 +102,7 @@ class CategoryType(DjangoObjectType):
         interfaces = (relay.Node, DjangoPkInterface)
 
     def resolve_ancestors(self, info):
-        context = info.context
-        return get_ancestors_from_cache(self, context)
+        return get_ancestors_from_cache(self, info.context)
 
     def resolve_children(self, info):
         return self.children.all()
@@ -118,7 +117,11 @@ class CategoryType(DjangoObjectType):
         ancestors = get_ancestors_from_cache(self, info.context)
         return self.get_absolute_url(ancestors)
 
-    def resolve_products(self, info, attributes, order_by, price_lte, price_gte):
+    def resolve_products(self, info, **args):
+        attributes = args.get('attributes')
+        order_by = args.get('order_by')
+        price_lte = args.get('price_lte')
+        price_gte = args.get('price_gte')
         context = info.context
 
         def filter_by_price(queryset, value, operator):
@@ -247,7 +250,8 @@ class Query(graphene.ObjectType):
     root = graphene.Field(lambda: Query)
     debug = graphene.Field(DjangoDebug, name='_debug')
 
-    def resolve_category(self, info, pk):
+    def resolve_category(self, info, **args):
+        pk = args.get('pk')
         categories = Category.tree.filter(pk=pk).get_cached_trees()
         if categories:
             category = categories[0]
@@ -256,7 +260,8 @@ class Query(graphene.ObjectType):
             return category
         return None
 
-    def resolve_attributes(self, info, category_pk):
+    def resolve_attributes(self, info, **args):
+        category_pk = args.get('category_pk')
         queryset = ProductAttribute.objects.prefetch_related('values')
         if category_pk:
             # Get attributes that are used with product classes
