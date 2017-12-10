@@ -188,7 +188,7 @@ msgstr "La fel ca adresa de livrare"
 #: saleor/checkout/forms.py:83
 msgctxt "Shipping method form field label"
 msgid "Shipping method"
-msgstr "Metoda de livrare"
+msgstr "Modalitate de livrare"
 
 #: saleor/checkout/forms.py:104
 msgctxt "Shipping form field label"
@@ -383,7 +383,7 @@ msgstr "Comanda ta nu necesita livrare"
 #: saleor/discount/models.py:224
 msgctxt "Voucher not applicable"
 msgid "Please select a shipping method first."
-msgstr "Te rog selecteaza o metoda de livrare"
+msgstr "Te rog selecteaza cum vrei sa se faca livrarea"
 
 #: saleor/discount/models.py:230
 msgctxt "Voucher not applicable"
@@ -588,7 +588,7 @@ msgstr "Pret de transport"
 #: saleor/order/models.py:243
 msgctxt "Delivery group field"
 msgid "shipping method name"
-msgstr "Nume metoda de livrare"
+msgstr "Nume modalitate de livrare"
 
 #: saleor/order/models.py:246
 msgctxt "Delivery group field"
@@ -1200,12 +1200,12 @@ msgstr "descriere"
 #: saleor/shipping/models.py:31
 msgctxt "Shipping method model"
 msgid "shipping method"
-msgstr "metoda de livrare"
+msgstr "modalitate de livrare"
 
 #: saleor/shipping/models.py:32
 msgctxt "Shipping method model"
 msgid "shipping methods"
-msgstr "metode de livrare"
+msgstr "modalitate de livrare"
 
 #: saleor/shipping/models.py:76
 msgctxt "Shipping method country field"
@@ -1220,17 +1220,17 @@ msgstr "pret"
 #: saleor/shipping/models.py:83
 msgctxt "Shipping method country field"
 msgid "shipping method"
-msgstr "metoda de livrare"
+msgstr "modalitate de livrare"
 
 #: saleor/shipping/models.py:90
 msgctxt "Shipping method country model"
 msgid "shipping method country"
-msgstr "tara pentru metoda de livrare"
+msgstr "tara pentru modalitatea de livrare"
 
 #: saleor/shipping/models.py:92
 msgctxt "Shipping method country model"
 msgid "shipping method countries"
-msgstr "tari pentru metoda de livrare"
+msgstr "tari pentru modalitate de livrare"
 
 #: saleor/site/models.py:17
 msgctxt "Site field"
@@ -1937,7 +1937,7 @@ msgstr "catre"
 #: templates/category/index.html:163
 msgctxt "Category price filter"
 msgid "Update"
-msgstr "Update"
+msgstr "Modifica"
 
 #: templates/category/index.html:190 templates/search/results.html:35
 msgctxt "Search without results text"
@@ -2037,7 +2037,7 @@ msgstr "Alege alta adresa"
 #: templates/checkout/shipping_method.html:13
 msgctxt "Checkout shipping method form title"
 msgid "Shipping method"
-msgstr "Metoda de livrare"
+msgstr "Modalitate de livrare"
 
 #: templates/checkout/shipping_method.html:17
 msgctxt "Checkout shipping method primary action"
@@ -2231,7 +2231,7 @@ msgstr "Atribute"
 #: templates/dashboard/shipping/list.html:18
 msgctxt "Dashboard shipping methods list"
 msgid "Shipping methods"
-msgstr "Metode de livrare"
+msgstr "Modalitati de livrare"
 
 #: templates/dashboard/base.html:198 templates/dashboard/sites/detail.html:11
 #: templates/dashboard/sites/detail.html:21
@@ -2330,7 +2330,7 @@ msgstr "Adauga noua categorie"
 #: templates/dashboard/staff/detail.html:78
 msgctxt "Dashboard update action"
 msgid "Update"
-msgstr "Update"
+msgstr "Modifica"
 
 #: templates/dashboard/category/detail.html:93
 #: templates/dashboard/discount/sale/form.html:108
@@ -4012,7 +4012,7 @@ msgstr "Fara rezultate la cautarea \"%(query)s\"."
 #: templates/dashboard/shipping/detail.html:21
 msgctxt "Shipping method form breadcrumbs"
 msgid "Shipping methods"
-msgstr "Metode de livrare"
+msgstr "Modalitati de livrare"
 
 #: templates/dashboard/shipping/detail.html:47
 msgctxt "Shipping method field"
@@ -4022,12 +4022,12 @@ msgstr "Descriere"
 #: templates/dashboard/shipping/detail.html:58
 msgctxt "Shipping method action"
 msgid "Edit shipping method"
-msgstr "Editeaza metoda de livrare"
+msgstr "Editeaza modalitatea de livrare"
 
 #: templates/dashboard/shipping/detail.html:61
 msgctxt "Shipping method action"
 msgid "Delete shipping method"
-msgstr "Sterge metoda de livrare"
+msgstr "Sterge modalitatea de livrare"
 
 #: templates/dashboard/shipping/detail.html:71
 msgid "Price per country"
@@ -4050,12 +4050,12 @@ msgstr "Editeaza"
 #: templates/dashboard/shipping/form.html:25
 msgctxt "Shipping method form page title"
 msgid "Add new method"
-msgstr "Adauga metoda noua"
+msgstr "Adauga modalitate noua"
 
 #: templates/dashboard/shipping/form.html:33
 msgctxt "Dashboard shipping method"
 msgid "Shipping methods"
-msgstr "Metode de livrare"
+msgstr "Modalitati de livrare"
 
 #: templates/dashboard/shipping/form.html:49
 msgctxt "Shipping method form page title"
@@ -4065,7 +4065,7 @@ msgstr "Editeaza"
 #: templates/dashboard/shipping/form.html:55
 msgctxt "Shipping method form breadcrumbs"
 msgid "Add new method"
-msgstr "Adauga metoda noua"
+msgstr "Adauga modalitate noua"
 
 #: templates/dashboard/shipping/form.html:75
 msgctxt "Shipping method form text"
@@ -4085,7 +4085,7 @@ msgstr "Pret"
 #: templates/dashboard/shipping/list.html:28
 msgctxt "Shipping method list add button text"
 msgid "Add method"
-msgstr "Adauga metoda"
+msgstr "Adauga modalitate"
 
 #: templates/dashboard/shipping/list.html:38
 msgctxt "Shipping methods table header"
@@ -4105,7 +4105,7 @@ msgstr "Tari"
 #: templates/dashboard/shipping/list.html:74
 msgctxt "Empty Shipping methods table message"
 msgid "No Shipping methods found"
-msgstr "Nu au fost gasite metode de livrare"
+msgstr "Nu au fost gasite modalitati de livrare"
 
 #: templates/dashboard/shipping/modal/confirm_delete.html:12
 msgctxt "Dashboard confirmation modal"
@@ -4188,7 +4188,7 @@ msgstr " <p>Sigur stergem acest membru al staff-ului?</p><p>Stergerea unui membr
 #: templates/home.html:13
 msgctxt "Homepage title"
 msgid "Promo &amp; Sale"
-msgstr "Promotii &amp; Reduceri"
+msgstr "Promotii & Reduceri"
 
 #: templates/home.html:14
 msgctxt "Homepage title"
@@ -4198,12 +4198,12 @@ msgstr "de la Polul Nord"
 #: templates/home.html:16 templates/home.html:31 templates/home.html:43
 msgctxt "Homepage action"
 msgid "Shop now"
-msgstr "Viziteaza acum"
+msgstr "Vreau sa vad"
 
 #: templates/home.html:30
 msgctxt "Homepage title"
 msgid "Size &amp; Colours"
-msgstr "Marime &amp; culori"
+msgstr "Marime & culori"
 
 #: templates/home.html:42
 msgctxt "Homepage title"
